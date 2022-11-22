@@ -1,6 +1,6 @@
 # Page settings
 
-baseurl = "https://resume.xqliu.vip"
+baseurl = "https://resume.xqliu.vip/"
 languageCode = "en-us"
 title = "Xinqian Liu Resume"
 theme = "hugo-orbit-theme"
