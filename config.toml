@@ -1,0 +1,228 @@
+# Page settings
+
+baseurl = "https://resume.xqliu.vip"
+languageCode = "en-us"
+title = "Xinqian Liu Resume"
+theme = "hugo-orbit-theme"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Meta
+    description = "Resume of Xinqian Liu"
+    author = "Xinqian Liu"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Xinqian Liu"
+        tagline = "Full stack senior developers"
+        avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: crystalynliu@gmail.com"
+        title = "crystalynliu@gmail.com"
+
+        # [[params.contact.list]]
+        # class = "phone"
+        # icon = "fa-phone"
+        # url = "tel:+86 xxx"
+        # title = "+86 xxx"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//blog.xqliu.vip"
+        title = "Blog"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/xqliu-478931216/"
+        title = "in/xqliu"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/crystalynliu"
+        title = "github.com/crystalynliu"
+
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "Master of computer applications technology"
+        college = "Xi’an University of Architecture and technology"
+        dates = "2013 - 2016"
+
+        [[params.education.list]]
+        degree = "Bachelor's degree"
+        college = "Xi’an University of Architecture and technology"
+        dates = "2008 - 2012"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "Chinese"
+        level = "Native"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Professional"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = """\
+            **As a Full stack senior developer for almost 7 years,** I have comprehensive technical skill set and expertise around **Javascript, React, NodeJS, AWS, Agile and business analysis**. \
+            \n\nPreviously, I have been working as a Full stack Developer of web 2.0 and 3.0 web platform, masters the skill like Frontend development (React), nodejs microservice design and development, AWS cloud usage, CI/CD, TDD, etc.
+            \n\nI have a wealth experience about work in agile team, have a lot of agile skills, like TDD, scrum project management. Also I'm ability of fast learning technical skills and business analysis.
+        """
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Full Stack developer Lead"
+        dates = "July 2021 - Present"
+        company = "Parallel Finance, Remote"
+        details = """\
+            **Work with Parallel Finance at its beginning,** I participated in the whole [Parallel](https://app.parallel.fi/overview) and [Parallel Heiko](https://app-heiko.parallel.fi/overview) product building, and part of [ParaSpace](https://app-staging.para.space/) product building.
+            Develop the Parallel and Parallel Heiko frontend, participated in the requirement management, review design and concept of maximum reuse of component to avoid unnecessary effort;
+            Design and develop multiple off-chain NodeJS service that provide the data for frontend, include learning Substrate technology, SubQuery, Nest.js, Graphql and Postgres, etc;
+            Build CI/CD for continue deployment using GitHub action; Using AWS cloudwatch, pagerduty, slack to build the monitor and alert ecosystem which will let team have a quick response on incident.
+            \n\nBesides coding, I also help the product to do the business analysis, go through the design and requirement, and then spilt them to stories or tasks which let team know what should do in next.
+            \n\nI have also management the project delivery, adjust the priority and do the estimation of the product requirements.
+            \n\nBuild the team ability for TDD and align skills, including writing unit tests and e2e tests to decrease the count of bugs, how to handle incident when it happens,
+            and how to write the useful documents, like repo Readme and troubleshooting documents.
+        """
+
+        [[params.jobs.list]]
+        position = "Senior Developer"
+        dates = "Jul 2016 - Jun 2021"
+        company = "ThoughtWorks, Xi'an"
+        details = """\
+            **As a Full Stack Developer,** I have been working for REA Group (a global online real estate advertising platform) for more than three years.
+            During this period, I work closely with a full ability team (includes PM, BA, Delivery Manager, Developers etc) to deliver many products like Audience Maximiser, Listing and agent analysis platform, etc.
+            These products bring lots of value to the customers. Also participated a few HackDay projects, these projects are mainly focus on re-imagine business model and improve our daily workflow. 
+            \n\nMy work includes, developing the frontend and backend major features, do investigation and make decision on technical selection.
+            Using React, Vue, d3, styled-component to create the web apps; Scala, NodeJS, Postgres, elasticSearch for backend; CI/CD with Docker, Buildkite. 
+            Familiar with the widely used infrastructure like AWS, Airflow, NewRelic, PagerDuty, JIRA, Git, etc.
+            Sharing knowledge in community and team.
+        """
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "**Following are side projects that I usually work on.** "
+
+		[[params.projects.list]]
+        title = "Parallel"
+        url = "https://app.parallel.fi/overview"
+        tagline = "A Defi product on Polkadot."
+
+        [[params.projects.list]]
+        title = "Parallel Heiko"
+        url = "https://app-heiko.parallel.fi/overview"
+        tagline = "A Defi product on Kusama."
+
+        [[params.projects.list]]
+        title = "ParaSpace"
+        url = "https://app-staging.para.space/"
+        tagline = "A Defi product on Ethereum."
+
+        [[params.projects.list]]
+        title = "Realestate.com.au"
+        url = "https://www.realestate.com.au/"
+        tagline = "A online platform of real estate advertising"
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Javascript & React"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "NodeJS"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "TypeScript"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "Graphql"
+        level = "90%"
+
+        [[params.skills.list]]
+        skill = "Monitor & Alert"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "TDD"
+        level = "80%"
+
+        [[params.skills.list]]
+        skill = "AWS"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "Docker"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "Scala"
+        level = "60%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = ""
