@@ -30,7 +30,7 @@ disable404 = true
     # Profile section
     [params.profile]
         name = "Xinqian Liu"
-        tagline = "Full stack senior developers"
+        tagline = "Full Stack Senior Developer"
         avatar = "profile.png"
 
     # Contact section
